@@ -1,7 +1,5 @@
 # 8 Puzzle Solvers
 
-Author: Haoran Zhang (No. 08018118)
-
 ## Introduction
 
 This project is an implementation of solvers for 8 puzzle. Solver types of this project include BFS, DFS and UCS. This
