@@ -1,13 +1,13 @@
-# 8 Puzzle Solvers
+# 8-puzzle Solvers
 
 ## Introduction
 
-This project is an implementation of solvers for 8 puzzle. Solver types of this project include BFS, DFS and UCS. This
+This project is an implementation of solvers for 8-puzzle. Solver types of this project include BFS, DFS and UCS. This
 project was written in C++ with the help of STL. Corresponding theory and tests are listed in following sections.
 
 ## Theory
 
-The 8 puzzle is a classic problem in the area of AI. It studies the case of a 9-grid with elements selected
+The 8-puzzle is a classic problem in the area of AI. It studies the case of a 9-grid with elements selected
 from `{ 1, 2, 3, 4, 5, 6, 7, 8, 0 }`, where digit 0 represents a blank grid. Solvers of this problem tries to find a
 moving strategy from an initial state to a final state, in as few steps as possible. Each step allows an exchange of
 digit 0 and one of its neighbor.
@@ -93,7 +93,7 @@ of each element (except digit 0) within them.
 
 ### Judgement of Solution Existence
 
-Following is a simple rule to check if an 8 puzzle is solvable. An 8 puzzle is unsolvable if
+Following is a simple rule to check if an 8-puzzle is solvable. An 8-puzzle is unsolvable if
 the [inversions](https://en.wikipedia.org/wiki/Inversion_(discrete_mathematics)) of the input sequence is odd while that
 of the destination is even, and vice versa.
 
@@ -160,7 +160,7 @@ if (node == final_state) {
 
 ### Maximum Depth Constraint
 
-While using DFS to search for solution of 8 puzzle, we found that it can easily go too deep into a branch, which may
+While using DFS to search for solution of 8-puzzle, we found that it can easily go too deep into a branch, which may
 result in a severe derivation from the solution. Therefore, we set the constraint for the maximum reachable depth in DFS
 as `30`.
 
